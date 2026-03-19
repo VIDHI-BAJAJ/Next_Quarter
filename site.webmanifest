@@ -1,0 +1,38 @@
+{
+  "name": "No graphismÂ®",
+  "short_name": "No graphismÂ®",
+  "description": "No graphismÂ® est une agence digitale spÃ©cialisÃ©e en design UX/UI et dÃ©veloppement web. Des sites sur mesure optimisÃ©s pour la conversion.",
+  "start_url": "/?utm_source=web_app_manifest",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon/default/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/default/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/favicon/default/screenshot-desktop-home.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "AperÃ§u desktop du site web de lâ€™agence web No graphismÂ®"
+    },
+    {
+      "src": "/favicon/default/screenshot-mobile-home.webp",
+      "sizes": "750x1334",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "AperÃ§u mobile du site web de lâ€™agence web No graphismÂ®"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
