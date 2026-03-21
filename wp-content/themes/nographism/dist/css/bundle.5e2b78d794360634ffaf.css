@@ -1619,19 +1619,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
 }
 
 .theme-orange {
-    --color-primary-1: #632312;
-    --color-primary-2: #7c2d19;
-    --color-secondary-1: #93cbda;
-    --color-secondary-2: #9ddaea;
-    --color-text: #fff;
-    --color-btn: #1a1918
+    --color-primary-1: #cdd5fa;
+    --color-primary-2: #bcc3ea;
+    --color-secondary-1: #3c6269;
+    --color-secondary-2: #436c73;
+    --color-text: #1a1918;
+    --color-btn: #fff
 }
 
 .theme-orange-light {
-    --color-primary-1: #ff5224;
-    --color-primary-2: #e73f16;
-    --color-secondary-1: #e73f16;
-    --color-secondary-2: #632312;
+      --color-primary-1: #cdd5fa;
+    --color-primary-2: #bcc3ea;
+    --color-secondary-1: #3c6269;
+    --color-secondary-2: #436c73;
     --color-text: #1a1918;
     --color-btn: #fff
 }
