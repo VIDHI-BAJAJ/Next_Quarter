@@ -1592,28 +1592,28 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
 }
 
 .theme-green {
-    --color-primary-1: #3c6269;
-    --color-primary-2: #436c73;
-    --color-secondary-1: #bcc3ea;
-    --color-secondary-2: #cdd5fa;
-    --color-text: #fff;
-    --color-btn: #1a1918
+    --color-primary-1: #cdd5fa;
+    --color-primary-2: #bcc3ea;
+    --color-secondary-1: #3c6269;
+    --color-secondary-2: #436c73;
+    --color-text: #1a1918;
+    --color-btn: #fff
 }
 
 .theme-blue {
-    --color-primary-1: #2b2d67;
-    --color-primary-2: #393b7b;
-    --color-secondary-1: #dbde69;
-    --color-secondary-2: #eef273;
-    --color-text: #fff;
-    --color-btn: #1a1918
+       --color-primary-1: #cdd5fa;
+    --color-primary-2: #bcc3ea;
+    --color-secondary-1: #3c6269;
+    --color-secondary-2: #436c73;
+    --color-text: #1a1918;
+    --color-btn: #fff
 }
 
 .theme-lime {
-    --color-primary-1: #eef273;
-    --color-primary-2: #dbde69;
-    --color-secondary-1: #393b7b;
-    --color-secondary-2: #2b2d67;
+       --color-primary-1: #cdd5fa;
+    --color-primary-2: #bcc3ea;
+    --color-secondary-1: #3c6269;
+    --color-secondary-2: #436c73;
     --color-text: #1a1918;
     --color-btn: #fff
 }
