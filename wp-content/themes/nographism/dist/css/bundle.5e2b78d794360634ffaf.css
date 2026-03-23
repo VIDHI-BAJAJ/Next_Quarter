@@ -1654,8 +1654,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
 
 @media (min-width: 1280px) {
     .container {
-        padding-left:80px;
-        padding-right: 80px
+        padding-left: 60px;
+        padding-right: 60px
     }
 }
 
