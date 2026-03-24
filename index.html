@@ -39,7 +39,6 @@
     <meta name="twitter:data1" content="Next Quater">
     <meta name="twitter:label2" content="Time to read">
     <meta name="twitter:data2" content="Less than a minute">
-    <!-- <base href="/Next_Quarter/"> -->
     <script type=application/ld+json class=rank-math-schema>
         {
             "@context": "https://schema.org",
@@ -472,6 +471,20 @@
   animation: logoFadeLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.1s;
 }
+/* Logo hidden by default */
+#header-logo-home {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+/* Logo appears after scroll (same trigger as Contact button) */
+body.scrolled #header-logo-home {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
     </style>
     <link rel=stylesheet id=swiper-styles-css href= "./wp-content/themes/nographism/dist/css/swiper.389e53b5d5f01ae74306.css" type=text/css media=all>
 </head>
@@ -486,18 +499,22 @@
         <header id=header class="no-selection fixed inset-x-0 top-0 z-40 pointer-events-none">
             <div class=container>
                 <div id=header-menu class="grid grid-cols-12 pt-gutter-mobile md:pt-gutter-desktop">
-                    <nav id=header-menu-mobile class="relative col-span-4 col-start-9 md:hidden place-self-end flex items-center gap-x-s sm:gap-x-gutter-mobile -my-s pointer-events-auto"><a class="btn btn-outline mr-[calc(1.33em+(theme(spacing.s)*2)+theme(spacing.s))] sm:mr-[calc(1.33em+(theme(spacing.s)*2)+theme(spacing.gutter-mobile))] md:-mr-px !transition-all md:absolute md:right-0 md:translate-x-full" href="en/contact.html"
-                            target> <span class=btn-text>Contact</span> </a></nav>
+                    <nav id=header-menu-mobile class="relative col-span-4 col-start-9 md:hidden place-self-end flex items-center gap-x-s sm:gap-x-gutter-mobile -my-s pointer-events-auto">
+                        <a class="btn btn-outline mr-[calc(1.33em+(theme(spacing.s)*2)+theme(spacing.s))] sm:mr-[calc(1.33em+(theme(spacing.s)*2)+theme(spacing.gutter-mobile))] md:-mr-px !transition-all md:absolute md:right-0 md:translate-x-full" href="en/contact.html"
+                            target> 
+                            <span class=btn-text>Contact</span> </a></nav>
                 </div>
             </div>
         </header>
-        <div id=header-logo-home-wrapper class="fixed top-header-inner inset-x-0 z-30 pointer-events-none">
-            <div class="container">
-                <a href=#top id=header-logo-home class="block box-content -m-m p-m" aria-label=No raphism®>
-                <span class="logo block relative pointer-events-none h-full parallax-active-group" data-trigger=#main data-delay=0>
-            <!-- <img src="./wp-content/uploads/White Logo.png" class="parallax-active w-auto" style="height: 24px;" /> -->
-                     </span></a></div>
-        </div>
+        <div id="header-logo-home-wrapper" class="fixed top-header-inner inset-x-0 z-30 pointer-events-none">
+  <div class="container">
+    <a href="#top" id="header-logo-home" class="block box-content -m-m p-m" aria-label="Next Quarter">
+      <span class="logo block relative pointer-events-none h-full">
+        <img src="./wp-content/uploads/White Logo.png" class="w-auto" style="height: 24px;" />
+      </span>
+    </a>
+  </div>
+</div>
         <div id=header-home class="no-selection parallax-active-group bg-white text-black-900" data-delay=0>
             <div class=container>
                 <div id=header-home-inner class="grid grid-cols-12 gap-y-gutter-desktop content-between pt-clamp-l md:regular-pt large-pb s:min-h-[calc(100lvh-theme(spacing.clamp-m)-(theme(fontSize.h3)*theme(lineHeight.snug))-theme(spacing.gutter-mobile)+theme(spacing.px))] md:min-h-[calc(100lvh-theme(spacing.clamp-m)-(theme(fontSize.h3)*theme(lineHeight.snug))-theme(spacing.gutter-desktop)+theme(spacing.px))]">
@@ -516,12 +533,12 @@
                             <p>Next Quarter is a Shopify CRO agency. We audit your store, find what's losing you money, and fix it, then we run experiments every month to make sure next quarter is better than this one. Otherwise, what's the point?
                               </p>
                         </div> 
-                        <a class="btn self-start btn-color" href= "en/contact.html" target> <span class=btn-text>BOOK A FREE AUDIT</span> </a></div>
+                        <a class="btn self-start btn-color" href= "./en/contact.html" target> <span class=btn-text>BOOK A FREE AUDIT</span> </a></div>
                 <nav id=main-menu class="relative col-span-4 col-start-9 md:col-span-8 md:col-start-6 place-self-end flex items-center gap-x-s sm:gap-x-gutter-mobile -my-s lg:-my-m overflow-rounded pointer-events-auto md-max:hidden parallax-active parallax-fadein">
                     <div id=main-menu-wrapper class="rounded-full hidden md:flex items-center gap-x-gutter-desktop pl-s pr-[4px] lg:pr-s bg-white">
                         <ul class="menu flex items-center -mr-gutter-mobile">
                             <li id=menu-item-50 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-736 current_page_item menu-item-50 ">
-                                <a href= "index.html" aria-current=page class="block relative p-s lg:px-gutter-mobile lg:py-m">Homepage</a></li>
+                                <a href= "./index.html" aria-current=page class="block relative p-s lg:px-gutter-mobile lg:py-m">Homepage</a></li>
                             <li id=menu-item-51 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51 "><a href= "./en/ux-ui-design-web-development-services.html" class="block relative p-s lg:px-gutter-mobile lg:py-m">Services</a></li>
                             <li id=menu-item-52 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52 "><a href="./en/web-agency.html" class="block relative p-s lg:px-gutter-mobile lg:py-m">About</a></li>
                             <li id=menu-item-53 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53 "><a href= "./en/contact.html" class="block relative p-s lg:px-gutter-mobile lg:py-m">Contact</a></li>
@@ -557,42 +574,82 @@
                     
                     <div class=mt-auto>
                         <div class="line-anim parallax-active parallax-scalex"></div>
-                        <div class="grid xs:grid-cols-3">
+                      <div class="grid xs:grid-cols-3">
                             <div class="table-row-anim py-s md:py-m style-highlight parallax-active parallax-fadein">E-mails<span class=xs:hidden>&thinsp;:</span></div>
-                            <ul class="xs:col-span-2 style-h8">
+                                 <ul class="xs:col-span-2 style-h8">
                                 <li class=relative>
                                     <div class="line-anim xs:!hidden parallax-active parallax-scalex"></div>
-                                    <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
-                                        <div class="py-s md:py-m">New project</div>
-                                        <div class=text-right><a href=&#109;ailto&#58;&#105;n&#102;o&#64;&#110;og&#114;&#97;&#112;&#104;ism.com target=_blank rel=nofollow class="btn-cover block py-s md:py-m" data-cursor-text="Email us" data-cursor-color=color data-wpel-link=ignore><span class="eeb eeb-nrtl"><span class=eeb-sd>&#105;n&#102;o&#64;</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>&#110;o&#103;ra</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>phi&#115;&#109;</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>&#46;&#99;&#111;m</span><span class=eeb-nodis>1773832639</span></span></a></div>
-                                    </div>
+                                  <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
+    <div class="py-s md:py-m">New project</div>
+    <div class="text-right">
+        <a href="mailto:hello@nextquarter.in" target="_blank" rel="nofollow" 
+           class="btn-cover block py-s md:py-m" 
+           data-cursor-text="Email us" 
+           data-cursor-color="color" 
+           data-wpel-link="ignore">
+           
+            <span>hello@nextquarter.in</span>
+        </a>
+    </div>
+</div>
                                 </li>
                                 <li class=relative>
                                     <div class="line-anim parallax-active parallax-scalex"></div>
-                                    <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
-                                        <div class="py-s md:py-m">Partnership</div>
-                                        <div class=text-right><a href=&#109;a&#105;&#108;t&#111;&#58;pa&#114;tn&#101;&#114;&#64;&#110;ograp&#104;&#105;sm&#46;&#99;o&#109; target=_blank rel=nofollow class="btn-cover block py-s md:py-m" data-cursor-text="Email us" data-cursor-color=color
-                                                data-wpel-link=ignore><span class="eeb eeb-nrtl"><span class=eeb-sd>pa&#114;tn</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>er&#64;no</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>g&#114;ap&#104;</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>&#105;&#115;m&#46;&#99;</span><span class=eeb-nodis>1773832639</span><span class=eeb-sd>o&#109;</span><span class=eeb-nodis>1773832639</span></span></a></div>
-                                    </div>
+                                   <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
+    <div class="py-s md:py-m">Partnership</div>
+    <div class="text-right">
+        <a href="mailto:partner@nextquarter.in" target="_blank" rel="nofollow" 
+           class="btn-cover block py-s md:py-m" 
+           data-cursor-text="Email us" 
+           data-cursor-color="color" 
+           data-wpel-link="ignore">
+           
+            <span>partner@nextquarter.in</span>
+        </a>
+    </div>
+</div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="line-anim parallax-active parallax-scalex"></div>
-                        <div class="grid xs:grid-cols-3">
+            <div class="line-anim parallax-active parallax-scalex">
+            </div>
+            <div class="grid xs:grid-cols-3">
                             <div class="table-row-anim py-s md:py-m style-highlight parallax-active parallax-fadein">Networks<span class=xs:hidden>&thinsp;:</span></div>
                             <ul class="xs:col-span-2 style-h8">
                                 <li class=relative>
                                     <div class="line-anim xs:!hidden parallax-active parallax-scalex"></div>
                                     <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
                                         <div class="py-s md:py-m">LinkedIn</div>
-                                        <div class=text-right><a href=https://www.linkedin.com/company/nographism/ target=_blank rel=nofollow class="btn-cover block py-s md:py-m" data-cursor-text="Follow us" data-cursor-color=color>@nographism</a></div>
+                                        <div class=text-right>
+                                            <a href="https://www.linkedin.com/company/nextquarternq" target="_blank" rel="nofollow" 
+   class="btn-cover block py-s md:py-m" 
+   data-cursor-text="Follow us" data-cursor-color="color">
+   /company/nextquarternq
+</a>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class=relative>
                                     <div class="line-anim parallax-active parallax-scalex"></div>
                                     <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
                                         <div class="py-s md:py-m">Instagram</div>
-                                        <div class=text-right><a href=https://www.instagram.com/nographism/ target=_blank rel=nofollow class="btn-cover block py-s md:py-m" data-cursor-text="Follow us" data-cursor-color=color>@nographism</a></div>
+                                        <div class=text-right><a href="https://www.instagram.com/nextquarternq" target="_blank" rel="nofollow" 
+   class="btn-cover block py-s md:py-m" 
+   data-cursor-text="Follow us" data-cursor-color="color">
+   @nextquarternq
+</a></div>
+                                    </div>
+                                    <div class="line-anim mt-auto parallax-active parallax-scalex"></div>
+                                </li>
+                                  <li class=relative>
+                                    <div class="line-anim parallax-active parallax-scalex"></div>
+                                    <div class="table-row-anim table-row-link flex justify-between parallax-active parallax-fadein">
+                                        <div class="py-s md:py-m">WhatsApp</div>
+                                        <div class=text-right><a href="https://www.instagram.com/nextquarternq" target="_blank" rel="nofollow" 
+   class="btn-cover block py-s md:py-m" 
+   data-cursor-text="Follow us" data-cursor-color="color">
+   +91 XXXXX XXXXX
+</a></div>
                                     </div>
                                     <div class="line-anim mt-auto parallax-active parallax-scalex"></div>
                                 </li>
@@ -701,7 +758,7 @@
                             </div>
                             <div class="flex flex-col gap-y-xs parallax-active parallax-fadein">
                                 <div class="flex flex-wrap gap-xs items-center">
-                                    <h3 class="style-h6 grow shrink-0"><a href=https://lovecovera.com/ target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">Que Universe</a></h3>
+                                    <h3 class="style-h6 grow shrink-0"><a href=https://lovecovera.com/ target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">Covera</a></h3>
                                     <div class="hidden xl:flex flex-wrap gap-xs"><span class="btn btn-smaller btn-gray pointer-events-none">Design</span><span class="btn btn-smaller btn-gray pointer-events-none">Development</span><span class="btn btn-smaller btn-gray pointer-events-none">SEO</span></div>
                                 </div>
                                 <p class=style-h8>Before Next Quarter, our conversion rate had been at 0.9% for over a year. We thought it was a traffic problem. It wasn't. Within 90
@@ -729,7 +786,7 @@ days they'd fixed 3 checkout issues we didn't know existed. We're now at 2.4%.</
                             </div>
                             <div class="flex flex-col gap-y-xs parallax-active parallax-fadein">
                                 <div class="flex flex-wrap gap-xs items-center">
-                                    <h3 class="style-h6 grow shrink-0"><a href=https://queuniverse.com/ target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">Jaeger-LeCoultre</a></h3>
+                                    <h3 class="style-h6 grow shrink-0"><a href=https://queuniverse.com/ target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">Que Universe</a></h3>
                                     <div class="hidden xl:flex flex-wrap gap-xs"><span class="btn btn-smaller btn-gray pointer-events-none">Design System</span><span class="btn btn-smaller btn-gray pointer-events-none">Motion Design</span></div>
                                 </div>
                                 <p class=style-h8>The monthly report changed how we run our entire business. We finally know what's working, what isn't, and exactly what's being
@@ -758,7 +815,7 @@ done about it. That kind of transparency from an agency is genuinely rare. </p>
                             </div>
                             <div class="flex flex-col gap-y-xs parallax-active parallax-fadein">
                                 <div class="flex flex-wrap gap-xs items-center">
-                                    <h3 class="style-h6 grow shrink-0"><a href=https://houseofvaulte.myshopify.com target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">Krew</a></h3>
+                                    <h3 class="style-h6 grow shrink-0"><a href=https://houseofvaulte.myshopify.com target=_blank rel="nofollow noopener" data-cursor-text="Discover the website">House OF Valute</a></h3>
                                     <div class="hidden xl:flex flex-wrap gap-xs"><span class="btn btn-smaller btn-gray pointer-events-none">Design</span><span class="btn btn-smaller btn-gray pointer-events-none">Development</span><span class="btn btn-smaller btn-gray pointer-events-none">SEO</span></div>
                                 </div>
                                 <p class=style-h8>They started with an audit not a pitch. They showed us where our store was losing money before asking for any of it. We'd been

@@ -1559,7 +1559,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
 }
 
 .bg-section iframe,.bg-section img,.bg-section picture,.bg-section video {
-    height: 100%;
+    height: 95%;
     left: 50%;
     position: absolute;
     top: 50%;
