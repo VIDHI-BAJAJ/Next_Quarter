@@ -1771,9 +1771,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
     :root {
         font-size:16px
     }
-    .style-h1-huge{
+}
+
+@media screen and (max-width : 768px) {
+       .style-h1-huge {
          font-size: 50px;
-    }
+    } 
 }
 
 @media only screen and (max-width: 640px) {
