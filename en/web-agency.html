@@ -68,6 +68,12 @@
   animation: logoFadeLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.1s;
 }
+
+@media (max-width: 768px) {
+    .cro-title {
+        font-size: 50px;
+    }
+}
     </style>
     <!-- Matomo -->
     <link rel="preconnect" href="https://analytics.nographism.com" />
@@ -278,7 +284,7 @@
       <section class="large-py overflow-visible parallax-active-group" data-stagger="100" data-delay="0">
         <div class="container grid grid-cols-12 gap-y-xl">
           <div class="col-span-full relative grid gap-y-gutter-mobile sm:gap-y-clamp-s">
-            <h1 class="style-h1-big parallax-active parallax-fadein">
+            <h1 class="style-h1-big cro-title parallax-active parallax-fadein">
               CRO Agency
             </h1>
             <div class="grid grid-cols-12 gap-y-clamp-s">
@@ -500,144 +506,67 @@ onboards you runs your account.
                             <p>And based on what they say, we’re nailing it.</p>
                         </div>
                         <div class="swiper-testimonials swiper-no-swiping cursor-default mt-clamp-s w-full lg:max-w-[clamp(420px,33vw,800px)] parallax-active parallax-fadein parallax-zoomin">
-                            <div class="swiper-wrapper !items-end" style="perspective:1000px; perspective-origin:top;">
+                              <div class="swiper-wrapper !items-end" style="perspective:1000px; perspective-origin:top;">
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;The monthly report changed how we run
-our entire business. We finally know what's working, what isn't, and exactly what's being
-done about it. That kind of transparency from an agency is genuinely rare. &thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo; Before working with them, our conversion rate was stuck at 0.9% for almost a year. We always thought the issue was traffic. But within 2–3 months, they fixed key checkout problems we didn’t even notice. Now we’re at 2.4%. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg> <img decoding=async src=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg?x38932 alt="Portrait of Evan Dorlot, Creative Director" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Evan Dorlot</cite> <span class="style-h8 mt-[.1em]">Creative Director, <a href=https://www.jaeger-lecoultre.com/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Jaeger‑LeCoultre</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Covera</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; They started with an audit not a pitch.
-They showed us where our store was losing money before asking for any of it. We'd been burned by two agencies before. This was completely different. &thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; The monthly reports are very clear and helpful. We now understand what is working, what is not, and what actions are being taken. It’s rare to see this level of transparency from an agency. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg> <img decoding=async src=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg?x38932 alt="Portrait of Sébastien Reichenbach, Director &#038; Producer" width=280 height=280 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Sébastien Reichenbach</cite> <span class="style-h8 mt-[.1em]">Director &#038; Producer, <a href=https://noxediem.ch/en/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Noxediem</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Que Universe</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;Before Next Quarter, our conversion rate had been at 0.9% for over a year. We thought it was a traffic problem. It wasn't. Within 90 days they'd fixed 3 checkout issues we didn't know existed. We're now at 2.4%.&thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;They didn’t start with selling their service. First, they did a proper audit and showed us where we were losing money. After bad experiences with other agencies, this felt very genuine and different.&thinsp;&raquo;</p>
                                     <footer
                                         class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg> <img decoding=async src=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg?x38932 alt="Portrait of Séverine Berger, Animatrice" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Séverine Berger</cite> <span class="style-h8 mt-[.1em]">Animatrice, <a href=https://hospirecre.ch/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Hospirécré</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Medfa</cite> </p>
                                         </footer>
                                 </blockquote>
                                  <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;The monthly report changed how we run
-our entire business. We finally know what's working, what isn't, and exactly what's being
-done about it. That kind of transparency from an agency is genuinely rare. &thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo; Before working with them, our conversion rate was stuck at 0.9% for almost a year. We always thought the issue was traffic. But within 2–3 months, they fixed key checkout problems we didn’t even notice. Now we’re at 2.4%. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg> <img decoding=async src=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg?x38932 alt="Portrait of Evan Dorlot, Creative Director" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Evan Dorlot</cite> <span class="style-h8 mt-[.1em]">Creative Director, <a href=https://www.jaeger-lecoultre.com/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Jaeger‑LeCoultre</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Covera</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; They started with an audit not a pitch.
-They showed us where our store was losing money before asking for any of it. We'd been burned by two agencies before. This was completely different. &thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; The monthly reports are very clear and helpful. We now understand what is working, what is not, and what actions are being taken. It’s rare to see this level of transparency from an agency. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg> <img decoding=async src=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg?x38932 alt="Portrait of Sébastien Reichenbach, Director &#038; Producer" width=280 height=280 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Sébastien Reichenbach</cite> <span class="style-h8 mt-[.1em]">Director &#038; Producer, <a href=https://noxediem.ch/en/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Noxediem</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Que Universe</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;Before Next Quarter, our conversion rate had been at 0.9% for over a year. We thought it was a traffic problem. It wasn't. Within 90 days they'd fixed 3 checkout issues we didn't know existed. We're now at 2.4%.&thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;They didn’t start with selling their service. First, they did a proper audit and showed us where we were losing money. After bad experiences with other agencies, this felt very genuine and different.&thinsp;&raquo;</p>
                                     <footer
                                         class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg> <img decoding=async src=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg?x38932 alt="Portrait of Séverine Berger, Animatrice" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Séverine Berger</cite> <span class="style-h8 mt-[.1em]">Animatrice, <a href=https://hospirecre.ch/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Hospirécré</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Medfa</cite> </p>
                                         </footer>
                                 </blockquote>
-                                <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;The monthly report changed how we run
-our entire business. We finally know what's working, what isn't, and exactly what's being
-done about it. That kind of transparency from an agency is genuinely rare. &thinsp;&raquo;</p>
+                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo; Before working with them, our conversion rate was stuck at 0.9% for almost a year. We always thought the issue was traffic. But within 2–3 months, they fixed key checkout problems we didn’t even notice. Now we’re at 2.4%. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg> <img decoding=async src=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg?x38932 alt="Portrait of Evan Dorlot, Creative Director" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Evan Dorlot</cite> <span class="style-h8 mt-[.1em]">Creative Director, <a href=https://www.jaeger-lecoultre.com/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Jaeger‑LeCoultre</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Covera</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; They started with an audit not a pitch.
-They showed us where our store was losing money before asking for any of it. We'd been burned by two agencies before. This was completely different. &thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; The monthly reports are very clear and helpful. We now understand what is working, what is not, and what actions are being taken. It’s rare to see this level of transparency from an agency. &thinsp;&raquo;</p>
                                     <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg> <img decoding=async src=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg?x38932 alt="Portrait of Sébastien Reichenbach, Director &#038; Producer" width=280 height=280 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Sébastien Reichenbach</cite> <span class="style-h8 mt-[.1em]">Director &#038; Producer, <a href=https://noxediem.ch/en/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Noxediem</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Que Universe</cite> </p>
                                     </footer>
                                 </blockquote>
                                 <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;Before Next Quarter, our conversion rate had been at 0.9% for over a year. We thought it was a traffic problem. It wasn't. Within 90 days they'd fixed 3 checkout issues we didn't know existed. We're now at 2.4%.&thinsp;&raquo;</p>
+                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;They didn’t start with selling their service. First, they did a proper audit and showed us where we were losing money. After bad experiences with other agencies, this felt very genuine and different.&thinsp;&raquo;</p>
                                     <footer
                                         class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg> <img decoding=async src=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg?x38932 alt="Portrait of Séverine Berger, Animatrice" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Séverine Berger</cite> <span class="style-h8 mt-[.1em]">Animatrice, <a href=https://hospirecre.ch/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Hospirécré</a></span></p>
+                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Medfa</cite> </p>
                                         </footer>
                                 </blockquote>
-                                <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;The monthly report changed how we run
-our entire business. We finally know what's working, what isn't, and exactly what's being
-done about it. That kind of transparency from an agency is genuinely rare. &thinsp;&raquo;</p>
-                                    <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg> <img decoding=async src=../wp-content/uploads/2024/12/jaeger-lecoultre-evan_dorlot.jpg?x38932 alt="Portrait of Evan Dorlot, Creative Director" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Evan Dorlot</cite> <span class="style-h8 mt-[.1em]">Creative Director, <a href=https://www.jaeger-lecoultre.com/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Jaeger‑LeCoultre</a></span></p>
-                                    </footer>
-                                </blockquote>
-                                <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp; They started with an audit not a pitch.
-They showed us where our store was losing money before asking for any of it. We'd been burned by two agencies before. This was completely different. &thinsp;&raquo;</p>
-                                    <footer class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg> <img decoding=async src=../wp-content/uploads/2026/02/noxediem-sebastien_reichenbach.jpg?x38932 alt="Portrait of Sébastien Reichenbach, Director &#038; Producer" width=280 height=280 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Sébastien Reichenbach</cite> <span class="style-h8 mt-[.1em]">Director &#038; Producer, <a href=https://noxediem.ch/en/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Noxediem</a></span></p>
-                                    </footer>
-                                </blockquote>
-                                <blockquote class="swiper-slide bg-[--color-primary-1] p-[clamp(10px,1.5lvh,20px)] rounded-xs ring-1 ring-white !h-auto">
-                                    <p class=style-h6 data-swiper-parallax-opacity=0.5>&laquo;&thinsp;Before Next Quarter, our conversion rate had been at 0.9% for over a year. We thought it was a traffic problem. It wasn't. Within 90 days they'd fixed 3 checkout issues we didn't know existed. We're now at 2.4%.&thinsp;&raquo;</p>
-                                    <footer
-                                        class="flex gap-x-gutter-mobile mt-clamp-s" data-swiper-parallax-opacity=0.5>
-                                        <picture class="flex flex-col justify-center shrink-0">
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg.webp type=image/webp>
-                                            <source srcset=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg> <img decoding=async src=../wp-content/uploads/2024/12/hospirecre-severine_berger.jpg?x38932 alt="Portrait of Séverine Berger, Animatrice" width=140 height=140 class="rounded-full w-[clamp(40px,2.7vw,70px)] h-[clamp(40px,2.7vw,70px)] object-cover overflow-rounded skip-lazy"
-                                                loading=lazy> </picture>
-                                        <p class="flex flex-col justify-center"> <cite class=not-italic>Séverine Berger</cite> <span class="style-h8 mt-[.1em]">Animatrice, <a href=https://hospirecre.ch/ target=_blank rel="nofollow noopener" class=underline data-cursor-text="Discover the website" data-cursor-color=color>Hospirécré</a></span></p>
-                                        </footer>
-                                </blockquote>
-                            </div> <button class="btn-next-testimonial absolute inset-x-0 top-full h-[calc(theme(spacing.clamp-l)+theme(spacing.clamp-s))] z-50 flex items-end justify-center lg-max:hidden" aria-label="Next review" data-cursor-text="Next review"
+                            </div>   
+                          
+                          <button class="btn-next-testimonial absolute inset-x-0 top-full h-[calc(theme(spacing.clamp-l)+theme(spacing.clamp-s))] z-50 flex items-end justify-center lg-max:hidden" aria-label="Next review" data-cursor-text="Next review"
                                 data-cursor-color=color data-icon=arrow-bottom></button><button class="btn-next-testimonial btn-only-icon !p-clamp-s absolute left-1/2 top-[calc(100%+theme(spacing.clamp-l)-theme(spacing.clamp-s)+.43em)] -translate-x-1/2 h-auto z-50 flex items-end justify-center lg:hidden"
                                 aria-label="Next review"><svg viewBox="0 0 44 73" xmlns=http://www.w3.org/2000/svg class="icon icon-arrow-bottom w-[.86em] h-[.86em]"><path class=fill-current d="m1 52.5 4.2-4.4 13.8 12.9v-61h6.1v61l13.8-12.9 4.1 4.4-21 19.5z"/></svg></button></div>
                     </div>

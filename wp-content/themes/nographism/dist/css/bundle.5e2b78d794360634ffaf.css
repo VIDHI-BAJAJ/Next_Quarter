@@ -1637,7 +1637,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,picture,se
 }
 
 .container {
-    max-width: 100%;
+    max-width: 95%;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
