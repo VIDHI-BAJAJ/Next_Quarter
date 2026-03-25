@@ -1078,10 +1078,6 @@ img,video {
     align-self: center
 }
 
-.overflow-auto {
-    overflow: auto
-}
-
 .overflow-hidden {
     overflow: hidden
 }
